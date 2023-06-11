@@ -64,7 +64,7 @@ if (isset($_POST["cari"])) {
       <ul>
         <li><a href="#">Beranda</a></li>
         <li><a href="#">Produk</a></li>
-        <li><a href="login.php">Login</a></li>
+        <li><a href="#" onclick="konfirmasiKeluar()">Logout</a></li>
       </ul>
     </nav>
   </header>
@@ -125,6 +125,15 @@ if (isset($_POST["cari"])) {
   <footer>
     <p>Created by <a href="">Nova Asyifa</a>. | &copy; 2023.</p>
   </footer>
+  <script>
+    function konfirmasiKeluar() {
+      var tanya = confirm("Apakah Anda Ingin Keluar ?");
+
+      if (tanya === true) {
+        document.location.href = "logout.php";
+      } else {}
+    }
+  </script>
 </body>
 
 </html>
