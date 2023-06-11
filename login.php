@@ -20,7 +20,7 @@ if (isset($_POST["login"])) {
         if ($username['level'] == 'admin') {
             echo "<meta http-equiv='refresh' content='0; url=admin.php'>";
         } else {
-            echo "<meta http-equiv='refresh' content='0; url=order.php'>";
+            echo "<meta http-equiv='refresh' content='0; url=index.php'>";
         }
     } else {
         echo "<script type='text/javascript'>alert('username dan password salah!');</script>";
